@@ -1,8 +1,8 @@
 """
-Name       : Abhradeep Guin
-Class      : M.Sc. 1st Year
+Name: Abhradeep Guin
+Class: M.Sc. 1st Year
 Assignment 1: Fuzzy Sets and Relations
-Question 1 : Union of two Fuzzy Sets
+Question: Union of two Fuzzy Sets
 """
 
 def fuzzy_union(setA, setB):
@@ -11,7 +11,7 @@ def fuzzy_union(setA, setB):
     for element in all_elements:
         a_val = setA.get(element, 0)
         b_val = setB.get(element, 0)
-        union_set[element] = max(a_val, b_val)
+        union_set[element] = max(a_val, b_val) #Formula: μA∪B​(x)=max{μA​(x),μB​(x)}
     return union_set
 
 

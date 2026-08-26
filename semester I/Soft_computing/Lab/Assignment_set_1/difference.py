@@ -10,7 +10,7 @@ def fuzzy_difference(setA, setB):
     all_elements = set(setA.keys()) | set(setB.keys())
     for element in all_elements:
         a_val = setA.get(element, 0)
-        b_val = setB.get(element, 0)
+        b_val = setB.get(element, 0) #Formula: μA−B​(x)=min{μA​(x),1−μB​(x)}
         difference_set[element] = round(min(a_val, 1 - b_val), 4) #round to 4 decimal places to avoid messy values.
     return difference_set
 

@@ -1,13 +1,13 @@
 """
-Name       : Abhradeep Guin
-Class      : M.Sc. 1st Year
+Name: Abhradeep Guin
+Class: M.Sc. 1st Year
 Assignment 1: Fuzzy Sets and Relations
-Question   : Complement of a Fuzzy Set
+Question: Complement of a Fuzzy Set
 """
 
 def fuzzy_complement(setA):
     complement_set = {}
-    for element in setA:
+    for element in setA: #Formula: μA​(x)=1−μA​(x)
         complement_set[element] = round(1 - setA[element], 4) #round to 4 decimal places to avoid messy values.
     return complement_set
 

@@ -1,8 +1,8 @@
 """
-Name       : Abhradeep Guin
-Class      : M.Sc. 1st Year
+Name: Abhradeep Guin
+Class: M.Sc. 1st Year
 Assignment 1: Fuzzy Sets and Relations
-Question   : Intersection of two Fuzzy Sets
+Question: Intersection of two Fuzzy Sets
 """
 
 def fuzzy_intersection(setA, setB):
@@ -11,7 +11,7 @@ def fuzzy_intersection(setA, setB):
     for element in all_elements:
         a_val = setA.get(element, 0)
         b_val = setB.get(element, 0)
-        intersection_set[element] = min(a_val, b_val)
+        intersection_set[element] = min(a_val, b_val) #Formula: μA∩B​(x)=min{μA​(x),μB​(x)}
     return intersection_set
 
 
@@ -42,7 +42,7 @@ def input_fuzzy_set(set_name, n):
     return fuzzy_set
 
 
-# ---- Main Program ----
+
 n = int(input("Enter number of elements: "))
 
 setA = input_fuzzy_set("A", n)

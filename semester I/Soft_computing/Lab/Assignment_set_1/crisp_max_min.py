@@ -1,8 +1,8 @@
 """
-Name       : Abhradeep Guin
-Class      : M.Sc. 1st Year
+Name: Abhradeep Guin
+Class: M.Sc. 1st Year
 Assignment 1: Fuzzy Sets and Relations
-Question   : Max-Min Composition of two Crisp Relations
+Question: Max-Min Composition of two Crisp Relations
 """
 
 def max_min_composition(R, S, m, n, p):
@@ -11,7 +11,7 @@ def max_min_composition(R, S, m, n, p):
         for j in range(p):
             values = []
             for k in range(n):
-                values.append(min(R[i][k], S[k][j]))
+                values.append(min(R[i][k], S[k][j])) #Formula: C = A ∘ B, Cᵢⱼ = maxₖ { min(aᵢₖ, bₖⱼ) }
             T[i][j] = max(values)
     return T
 
