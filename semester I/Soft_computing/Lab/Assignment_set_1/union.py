@@ -17,11 +17,11 @@ def fuzzy_union(setA, setB):
 
 # To avoid invalid input, it keeps asking until the user enters a value between 0 and 1 (inclusive).
 
-def get_valid_membership(prompt):
+def get_valid_membership(valid_input):
     
     while True:
         try:
-            value = float(input(prompt))
+            value = float(input(valid_input))
         except ValueError:
             print("\nInvalid input! Please enter a number.\n")
             continue
